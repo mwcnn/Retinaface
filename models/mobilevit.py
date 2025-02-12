@@ -287,3 +287,10 @@ class MobileViT(nn.Module):
         x = self.out(x)
 
         return x
+
+
+
+if __name__ == '__main__':
+    net = MobileViT()
+    x = torch.randn(2,3,224,224)
+    y = net(x)
